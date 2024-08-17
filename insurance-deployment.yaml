@@ -24,35 +24,35 @@ spec:
           - name: SPRING_DATASOURCE_URL
             valueFrom:
               secretKeyRef:
-                name: myapp-secret
+                name: insurance-secret
                 key: spring.datasource.url
           - name: SPRING_DATASOURCE_USERNAME
             valueFrom:
               secretKeyRef:
-                name: myapp-secret
+                name: insurance-secret
                 key: spring.datasource.username
           - name: SPRING_DATASOURCE_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: myapp-secret
+                name: insurance-secret
                 key: spring.datasource.password
           - name: SPRING_MAIL_USERNAME
             valueFrom:
               secretKeyRef:
-                name: myapp-secret
+                name: insurance-secret
                 key: spring.mail.username
           - name: SPRING_MAIL_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: myapp-secret
+                name: insurance-secret
                 key: spring.mail.password
           - name: METAMASK_PRIVATE_KEY
             valueFrom:
               secretKeyRef:
-                name: myapp-secret
+                name: insurance-secret
                 key: metamask.private.key
           - name: ETHERSCAN_API_KEY
             valueFrom:
               secretKeyRef:
-                name: myapp-secret
+                name: insurance-secret
                 key: etherscan.api.key
