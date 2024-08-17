@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: insurance
+  name: insurance
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: insurance
+  template:
+    metadata:
+      labels:
+        app: insurance
+    spec:
+      containers:
+        - image: jwlee2357/graduationwork:latest
+          name: insurance
+          ports:
+            - containerPort: 8080
+              name: insurance
