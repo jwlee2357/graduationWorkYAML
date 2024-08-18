@@ -15,7 +15,7 @@ spec:
         app: insurance
     spec:
       containers:
-        - image: jwlee2357/graduationwork:44
+        - image: jwlee2357/graduationwork:45
           name: insurance
           ports:
             - containerPort: 8080
